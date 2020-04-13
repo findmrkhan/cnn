@@ -1,1 +1,51 @@
 
+Magic Command in python
+
+% prefix represents that the command operates over a single line of code whereas %% prefix allows the command to operate over an entire cell.
+
+1)
+%run allows you to run any external python file from jupyter notebook
+
+%run myCode.py
+
+
+
+2) %%time
+allows to track the total execution of your cell
+
+3) %writefile myCode.py
+Notice the double % before the command which indicates the whole content of the cell will be exported.
+
+4) %pycat myCode.py
+display the content of any file in any directory
+
+5) %who
+displays all the variables irrespective of their data types
+
+6) This magic commands allows you to share any variable between different jupyter notebooks. 
+You need to pass the original variable with the magic command.
+%store mydata
+%store -r mydata
+
+7) %% html
+allows us to write html code in the cell. The cell will now act as a html editor with html output of the cell.
+
+
+8) %%js 
+You can run Javascript code in a cell using the %%js magic command similar to HTML magic command
+
+9) %matplotlib inline
+
+10) %env
+This magic commands allows you to do 3 things — 
+Lists all environment variables, %env
+get the value of a particular environment variable, %env HOME
+set a value for a variable %env HOME /home/mrk
+
+11) %pinfo 
+
+provides a detailed information about the object which is passed along with it. It is similar to object? function.
+
+12) %IPCompleter.greedy=True
+
+
